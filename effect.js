@@ -4,6 +4,7 @@ $(window).load(function () {
 });
 $('document').ready(function () {
 	var audio = $('.song')[0];
+	$("#turn_on").fadeOut(`fast`);
 
 	// self code open
 
@@ -14,6 +15,7 @@ $('document').ready(function () {
 		$(this).fadeOut('fast');
 		$("#msg").fadeIn('slow').fadeIn('slow').delay(4000).promise().done(function () {
 			$('#askbtn').css({ "display": "flex" });
+			$("#turn_on").fadeOut(`slow`);
 
 		});
 
@@ -242,7 +244,7 @@ $('document').ready(function () {
 
 	$("#end").click(() => {
 		audio.pause();
-		$("#end").fadeOut("slow");
+		$(this).fadeOut("slow");
 		$("#devloper").fadeIn('slow');
 		$("#devloper").html("By By Annu Take care 🤗 💖👋 !! i have spend few hours to make this software for you, thanks to staying here at the last moment !!");
 		$("#devloper").css({ 'color': "white", 'background': "green", 'z-index': 9999000 });
