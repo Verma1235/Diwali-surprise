@@ -86,6 +86,7 @@ $('document').ready(function () {
 		$('.bannar').addClass('bannar-come');
 		$(this).fadeOut('slow').delay(6000).promise().done(function () {
 			$('#balloons_flying').fadeIn('slow');
+			$("#devloper").fadeOut('slow');
 		});
 	});
 
@@ -242,15 +243,15 @@ $('document').ready(function () {
 	$("#end").click(() => {
 		audio.pause();
 		$("#end").fadeOut("slow");
+		$("#devloper").fadeIn('slow');
 		$("#devloper").html("By By Annu Take care 🤗 💖👋 !! i have spend few hours to make this software for you, thanks to staying here at the last moment !!");
 		$("#devloper").css({ 'color': "white", 'background': "green", 'z-index': 9999000 });
-		$('#preloader').fadeOut('slow');
+		$('#preloader').fadeIn('slow');
+		$("#msg").fadeIn('slow').fadeOut('slow');
+		$('#askbtn').css({ "display": "none" });
+	});
 
-
-	})
 });
-
-
 
 //    audio.pause();
 // 						$("#devloper").html("By By Annu Take care 🤗 💖👋😘 !! i have spend few hours to make this software for you, thanks to staying here at the last moment !!");
