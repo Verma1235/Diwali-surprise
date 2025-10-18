@@ -15,7 +15,7 @@ $('document').ready(function () {
 		$(this).fadeOut('fast');
 		$("#msg").fadeIn('slow').fadeIn('slow').delay(4000).promise().done(function () {
 			$('#askbtn').css({ "display": "flex" });
-			$("#turn_on").fadeOut(`slow`);
+			$("#turn_on").fadeIn(`slow`);
 
 		});
 
