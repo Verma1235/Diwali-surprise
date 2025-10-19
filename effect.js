@@ -246,7 +246,7 @@ $('document').ready(function () {
 		audio.pause();
 		$(this).fadeOut("slow");
 		$("#devloper").fadeIn('slow');
-		$("#devloper").html("By By Annu Take care 🤗 💖👋 !! i have spend few hours to make this software for you, thanks to staying here at the last moment !!");
+		$("#devloper").html("By By .Com Take care 🤗 💖👋 !! I have spend few hours to make this software for you, thanks to staying here at the last moment !!");
 		$("#devloper").css({ 'color': "white", 'background': "green", 'z-index': 9999000 });
 		$('#preloader').fadeIn('slow');
 		$("#msg").fadeIn('slow').fadeOut('slow');
